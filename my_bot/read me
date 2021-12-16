@@ -1,0 +1,5 @@
+Robot move code:
+rostopic pub /cmd_vel geometry_msgs/Twist -r 1 -- '{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0,y: 0.0,z: 0.0}}'
+         
+Robot stop code:
+ rostopic pub /cmd_vel geometry_msgs/Twist -r 1 -- '{linear: {x: 0.0, y: 0.0, z: 0.0}, angular: {x: 0.0,y: 0.0,z: 0.0}}'
